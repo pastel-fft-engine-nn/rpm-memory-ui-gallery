@@ -1,1 +1,179 @@
-CONTENT_TOO_LARGE_FOR_THIS_EXAMPLE_BUT_IN_REAL_IT_WOULD_BE_THE_FULL_HTML
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPM Memory UI Gallery</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      margin: 0;
+      padding: 32px 16px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 36px;
+      font-size: 15px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .thumb-wrap {
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 280px;
+      overflow: hidden;
+    }
+    .thumb-wrap img {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: top center;
+    }
+    .info {
+      padding: 14px 16px 16px;
+    }
+    .info h3 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: #888;
+      font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .thumb-wrap { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RPM Memory UI Gallery</h1>
+    <p class="subtitle">各種テーマのスクリーンショット<br>サムネイルをクリックするとA4サイズの画像が表示されます</p>
+    <div class="gallery">
+      <div class="card">
+        <a href="views/IMG_2281.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2281.png" alt="オレンジテーマ">
+          </div>
+          <div class="info"><h3>オレンジテーマ</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2282.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2282.png" alt="パステルピンク">
+          </div>
+          <div class="info"><h3>パステルピンク</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2283.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2283.png" alt="グレーテーマ">
+          </div>
+          <div class="info"><h3>グレーテーマ</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2284.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2284.png" alt="ダークテーマ">
+          </div>
+          <div class="info"><h3>ダークテーマ</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2285.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2285.png" alt="ミニマル（赤針）">
+          </div>
+          <div class="info"><h3>ミニマル（赤針）</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2286.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2286.png" alt="ティールテーマ">
+          </div>
+          <div class="info"><h3>ティールテーマ</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2287.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2287.png" alt="クロノグラフ風">
+          </div>
+          <div class="info"><h3>クロノグラフ風</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2288.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2288.png" alt="設計図風（ブルー）">
+          </div>
+          <div class="info"><h3>設計図風（ブルー）</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2289.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2289.png" alt="ポケットデバイス風">
+          </div>
+          <div class="info"><h3>ポケットデバイス風</h3></div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="views/IMG_2290.html" target="_blank">
+          <div class="thumb-wrap">
+            <img src="thumbs/IMG_2290.png" alt="グラデーション（モダン）">
+          </div>
+          <div class="info"><h3>グラデーション（モダン）</h3></div>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p>すべての画像はA4サイズ（約517×1123px）に収まるようリサイズされています。<br>
+      サムネイルは内容が分かる大きさ（高さ約480px）に調整しています。</p>
+    </footer>
+  </div>
+</body>
+</html>

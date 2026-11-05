@@ -10,66 +10,55 @@
       background: #f5f5f7;
       color: #1d1d1f;
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
       line-height: 1.6;
     }
     .container {
-      max-width: 900px;
+      max-width: 700px;
       margin: 0 auto;
     }
     h1 {
       text-align: center;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .subtitle {
       text-align: center;
       color: #666;
       margin-bottom: 40px;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 24px;
+    .link-list {
+      list-style: none;
+      padding: 0;
     }
-    .card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
+    .link-list li {
+      margin: 12px 0;
     }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    }
-    .card a {
-      text-decoration: none;
-      color: inherit;
+    .link-list a {
       display: block;
+      background: white;
+      padding: 16px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #1d1d1f;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: all 0.2s;
+      font-weight: 500;
     }
-    .thumb {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: top;
-      background: #eee;
+    .link-list a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      color: #0071e3;
     }
-    .info {
-      padding: 16px;
-    }
-    .info h3 {
-      margin: 0 0 8px 0;
-      font-size: 16px;
-    }
-    .info p {
-      margin: 0;
-      font-size: 13px;
-      color: #666;
+    .link-list a span {
+      color: #888;
+      font-weight: 400;
+      font-size: 14px;
+      margin-left: 12px;
     }
     footer {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 50px;
       color: #888;
       font-size: 14px;
     }
@@ -78,104 +67,24 @@
 <body>
   <div class="container">
     <h1>RPM Memory UI Gallery</h1>
-    <p class="subtitle">各種テーマのスクリーンショット（A4サイズに収まるようリサイズ済み）<br>リンクをクリックすると画像が表示されます</p>
+    <p class="subtitle">各種テーマのスクリーンショット<br>リンクをクリックするとA4サイズに収まる画像が表示されます</p>
     
-    <div class="gallery">
-      <div class="card">
-        <a href="images/IMG_2281.png" target="_blank">
-          <img class="thumb" src="images/IMG_2281.png" alt="Theme 1">
-          <div class="info">
-            <h3>オレンジテーマ</h3>
-            <p>IMG_2281.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2282.png" target="_blank">
-          <img class="thumb" src="images/IMG_2282.png" alt="Theme 2">
-          <div class="info">
-            <h3>パステルピンク</h3>
-            <p>IMG_2282.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2283.png" target="_blank">
-          <img class="thumb" src="images/IMG_2283.png" alt="Theme 3">
-          <div class="info">
-            <h3>グレーテーマ</h3>
-            <p>IMG_2283.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2284.png" target="_blank">
-          <img class="thumb" src="images/IMG_2284.png" alt="Theme 4">
-          <div class="info">
-            <h3>ダークテーマ</h3>
-            <p>IMG_2284.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2285.png" target="_blank">
-          <img class="thumb" src="images/IMG_2285.png" alt="Theme 5">
-          <div class="info">
-            <h3>ミニマル（赤針）</h3>
-            <p>IMG_2285.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2286.png" target="_blank">
-          <img class="thumb" src="images/IMG_2286.png" alt="Theme 6">
-          <div class="info">
-            <h3>ティールテーマ</h3>
-            <p>IMG_2286.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2287.png" target="_blank">
-          <img class="thumb" src="images/IMG_2287.png" alt="Theme 7">
-          <div class="info">
-            <h3>クロノグラフ風</h3>
-            <p>IMG_2287.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2288.png" target="_blank">
-          <img class="thumb" src="images/IMG_2288.png" alt="Theme 8">
-          <div class="info">
-            <h3>設計図風（ブルー）</h3>
-            <p>IMG_2288.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2289.png" target="_blank">
-          <img class="thumb" src="images/IMG_2289.png" alt="Theme 9">
-          <div class="info">
-            <h3>ポケットデバイス風</h3>
-            <p>IMG_2289.png</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="images/IMG_2290.png" target="_blank">
-          <img class="thumb" src="images/IMG_2290.png" alt="Theme 10">
-          <div class="info">
-            <h3>グラデーション（モダン）</h3>
-            <p>IMG_2290.png</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    <ul class="link-list">
+      <li><a href="views/IMG_2281.html">オレンジテーマ <span>IMG_2281</span></a></li>
+      <li><a href="views/IMG_2282.html">パステルピンク <span>IMG_2282</span></a></li>
+      <li><a href="views/IMG_2283.html">グレーテーマ <span>IMG_2283</span></a></li>
+      <li><a href="views/IMG_2284.html">ダークテーマ <span>IMG_2284</span></a></li>
+      <li><a href="views/IMG_2285.html">ミニマル（赤針） <span>IMG_2285</span></a></li>
+      <li><a href="views/IMG_2286.html">ティールテーマ <span>IMG_2286</span></a></li>
+      <li><a href="views/IMG_2287.html">クロノグラフ風 <span>IMG_2287</span></a></li>
+      <li><a href="views/IMG_2288.html">設計図風（ブルー） <span>IMG_2288</span></a></li>
+      <li><a href="views/IMG_2289.html">ポケットデバイス風 <span>IMG_2289</span></a></li>
+      <li><a href="views/IMG_2290.html">グラデーション（モダン） <span>IMG_2290</span></a></li>
+    </ul>
     
     <footer>
-      <p>すべての画像はA4サイズ（約517×1123px）に収まるようリサイズされています。<br>
-      印刷時や表示時にA4用紙に収まりやすいサイズです。</p>
+      <p>すべての画像はA4サイズ（約517×1123px / 210mm×297mm相当）に収まるようリサイズされています。<br>
+      印刷やプレゼン資料に使いやすいサイズです。</p>
     </footer>
   </div>
 </body>

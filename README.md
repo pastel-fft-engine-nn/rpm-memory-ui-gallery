@@ -1,13 +1,14 @@
 # RPM Memory UI Gallery
 
-RPM Memory アプリの各種UIテーマスクリーンショットギャラリーです。
+RPM Memory アプリの各種UIテーマスクリーンショットギャラリー（サムネイル版）です。
 
 ## アクセス
 - リポジトリ: https://github.com/pastel-fft-engine-nn/rpm-memory-ui-gallery
-- GitHub Pages (有効化後): https://pastel-fft-engine-nn.github.io/rpm-memory-ui-gallery/
+- GitHub Pages: https://pastel-fft-engine-nn.github.io/rpm-memory-ui-gallery/
 
-## 内容
-- `index.html`: リンク一覧（クリックで各画像ビューを表示）
-- `views/`: 各テーマの表示ページ（画像はA4サイズに収まるようリサイズ済み、埋め込み）
+## 使い方
+1. Settings → Pages で `main` ブランチの root を有効化
+2. 下記アーカイブを展開し、`thumbs/` と `views/` フォルダをリポジトリにアップロード
 
-すべての写真はA4サイズ（約517×1123px）に収まる大きさに変更されています。
+サムネイルは内容が分かる大きさ（高さ約480px）に調整しています。
+クリックするとA4サイズの画像が表示されます。
